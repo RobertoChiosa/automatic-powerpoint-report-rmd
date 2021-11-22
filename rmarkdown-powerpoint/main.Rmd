@@ -1,0 +1,53 @@
+---
+title: "CRYPTO REPORT"
+subtitle: "Overview of the principal cryptocurrency on the market"
+author: "Roberto Chiosa"
+date: "`r Sys.Date()`"
+toc: TRUE
+output: 
+  powerpoint_presentation:
+      reference_doc: template.pptx
+---
+```{r, echo = FALSE}
+library(ggplot2)
+knitr::opts_chunk$set( echo=FALSE, warning=FALSE,message=FALSE, cache=FALSE)
+```
+
+
+# OVERVIEW
+
+## Bitcoin
+One column master slide
+
+* ciao
+
+
+## Etherium
+:::::::::::::: {.columns}
+::: {.column}
+hello
+:::
+::: {.column}
+```{r , out.width = "100%", out.height = "100%", dpi = 200}
+
+ggplot(iris) + 
+  geom_point(aes(x = Petal.Length, y = Sepal.Width), color = "#a5d39f", show.legend = F) +
+  theme(
+    panel.background = element_rect(fill = "#242424"), # bg of the panel
+    axis.title.x = element_text(color = "white"),
+    axis.title.y = element_text(color = "white"),
+    axis.text.x = element_text(color = "white"),
+    axis.text.y = element_text(color = "white"),
+    axis.line.x = element_line(color = "white"),
+     axis.line.y = element_line(color = "white"),
+    plot.background = element_rect(fill = "#242424", color = NA), # bg of the plot
+    panel.grid.major = element_blank(), # get rid of major grid
+    panel.grid.minor = element_blank(), # get rid of minor grid
+    legend.background = element_rect(fill = "#242424"), # get rid of legend bg
+    legend.box.background = element_rect(fill = "#242424") # get rid of legend panel bg
+  )
+```
+
+
+:::
+::::::::::::::
